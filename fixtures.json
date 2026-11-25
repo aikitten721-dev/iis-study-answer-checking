@@ -1,0 +1,95 @@
+[
+  {
+    "id": "normal",
+    "title": "A supported explanation",
+    "claim": "Visible options support recognition, so the user does not have to recall the option without a cue.",
+    "steps": [
+      {
+        "title": "Choose a claim",
+        "status": "Ready to check",
+        "reason": "Select the explanation and note passage.",
+        "action": "Compare with passage"
+      },
+      {
+        "title": "Inspect the evidence",
+        "status": "Supported by this passage",
+        "reason": "The passage distinguishes a visible option from an answer recalled without a cue. This supports the selected point.",
+        "action": "Keep with source"
+      },
+      {
+        "title": "Keep the explanation",
+        "status": "Kept in this walkthrough",
+        "reason": "Keep the explanation together with its passage and location.",
+        "action": null
+      }
+    ],
+    "source_file": "sample_notes_n2.md",
+    "needs_source": false
+  },
+  {
+    "id": "mismatch",
+    "title": "An omitted condition",
+    "claim": "Everyone can hold exactly four items.",
+    "steps": [
+      {
+        "title": "Inspect the initial judgement",
+        "status": "Supported — initial error",
+        "reason": "The initial simulated comparison matches the topic and number but misses the qualifications.",
+        "action": "This does not match"
+      },
+      {
+        "title": "Withdraw the old judgement",
+        "status": "Awaiting recheck",
+        "reason": "The changed quantity, unit and conditions have been reported. The old support label is withdrawn.",
+        "action": "Recheck the same claim"
+      },
+      {
+        "title": "Compare the differences",
+        "status": "Inconsistent with this passage",
+        "reason": "Everyone is not established; exactly differs from nearer; items differs from chunks; the grouping and rehearsal conditions are missing.",
+        "action": "Use narrower wording and recheck"
+      },
+      {
+        "title": "Inspect the revised claim",
+        "status": "Supported by this passage — revised claim only",
+        "reason": "According to this sample note, capacity is nearer four chunks when grouping and rehearsal are controlled. The original remains visible above.",
+        "action": "Keep revision with source"
+      },
+      {
+        "title": "Keep the revision",
+        "status": "Revision kept in this walkthrough",
+        "reason": "Keep the narrower wording together with N1.",
+        "action": null
+      }
+    ],
+    "source_file": "sample_notes_n1.md",
+    "needs_source": false
+  },
+  {
+    "id": "missing",
+    "title": "No source selected",
+    "claim": "Everyone can hold exactly four items.",
+    "steps": [
+      {
+        "title": "Request a check",
+        "status": "Not verified — no source selected",
+        "reason": "Choose the relevant sample passage to continue the comparison.",
+        "action": "Select the N1 sample passage"
+      },
+      {
+        "title": "Confirm the source",
+        "status": "Ready to check",
+        "reason": "N1 is selected. Its location and exact wording are now visible.",
+        "action": "Check the claim"
+      },
+      {
+        "title": "Inspect the result",
+        "status": "Inconsistent with this passage",
+        "reason": "The selected note says nearer four chunks under stated conditions. It does not support the original wording.",
+        "action": null
+      }
+    ],
+    "source_file": "sample_notes_n1.md",
+    "needs_source": true
+  }
+]
